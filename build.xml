@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<project name="Tuenti Submit Build" default="main" basedir=".">
+    <target name="main">
+    	<delete file="build/source.zip"/>
+    	<delete file="bin/sample.log"/>
+    	<delete file="sample.log"/>
+    	<zip destfile="build/source.zip" basedir="." excludes="build/**,extra/**,bin/**" level="9"/>
+    </target>
+</project>	
